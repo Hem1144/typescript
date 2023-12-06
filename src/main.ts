@@ -1,9 +1,14 @@
-let username = "Dulal";
-console.log(username);
+let myName: string = "hemlal";
+myName = "Dulal";
+let any: any;
+any = "string";
+any = 7;
+let album: string | number;
+album = "myAlbum";
 
-let a: number = 6;
-let b: string = "3";
-let c: number = 7;
+const sum = (a: number, b: string) => {
+  return a + b;
+};
 
-console.log(a / b);
-console.log(c * b);
+let postId: number | string;
+let isActive: number | boolean | string; //! Union types
