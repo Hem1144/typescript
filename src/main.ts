@@ -1,14 +1,23 @@
-let myName: string = "hemlal";
-myName = "Dulal";
-let any: any;
-any = "string";
-any = 7;
-let album: string | number;
-album = "myAlbum";
+let strArray = ["one", "two", "three"];
 
-const sum = (a: number, b: string) => {
-  return a + b;
-};
+let guitar = ["Laa", "Too", 1960];
 
-let postId: number | string;
-let isActive: number | boolean | string; //! Union types
+let mix = ["mix", 1940, true];
+
+strArray[0] = "Doe";
+
+let tuples: [string, number, boolean] = ["dulal", 1, true];
+
+let myObj: object;
+myObj = [];
+console.log(typeof myObj);
+
+enum Grade {
+  T = 3,
+  U,
+  B,
+  S,
+  C,
+}
+
+console.log(Grade.B);
